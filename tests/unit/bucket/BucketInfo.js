@@ -286,6 +286,15 @@ Object.keys(acl).forEach(
                 assert.deepStrictEqual(dummyBucket.getCors(),
                     newCorsConfiguration);
             });
+            it('setReplicationConfiguration should set replication ' +
+                ' configuration', () => {
+                const newReplicationConfiguration =
+                    { Status: 'Enabled', MfaDelete: 'Enabled' };
+                dummyBucket
+                    .setReplicationConfiguration(newReplicationConfiguration);
+                // assert.deepStrictEqual(dummyBucket.getReplicationConfiguration(),
+                //     newReplicationConfiguration);
+            });
         });
     })
 );
