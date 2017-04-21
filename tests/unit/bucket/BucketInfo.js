@@ -83,9 +83,9 @@ const testReplicationConfiguration = {
             Prefix: 'STRING_VALUE',
             Status: 'Enabled',
             ID: 'STRING_VALUE',
-        }
-    ]
-}
+        },
+    ],
+};
 // create a dummy bucket to test getters and setters
 
 Object.keys(acl).forEach(
