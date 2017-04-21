@@ -21,7 +21,7 @@ for (let i = 0; i < 100000; i ++) {
     });
 }
 
-describe('aws-node-sdk test bucket put acl', () => {
+describe.only('aws-node-sdk test bucket put acl', () => {
     let s3;
 
     // setup test

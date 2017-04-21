@@ -5,7 +5,7 @@ import getConfig from '../support/config';
 
 const bucket = `replication-bucket-${Date.now()}`;
 
-describe.only('aws-node-sdk test bucket replication', function testSuite() {
+describe('aws-node-sdk test bucket replication', function testSuite() {
     this.timeout(60000);
     let s3;
 
