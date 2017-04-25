@@ -310,8 +310,6 @@ Object.keys(acl).forEach(
                     { Status: 'Enabled', MfaDelete: 'Enabled' };
                 dummyBucket
                     .setReplicationConfiguration(newReplicationConfiguration);
-                // assert.deepStrictEqual(dummyBucket.getReplicationConfiguration(),
-                //     newReplicationConfiguration);
             });
         });
     })
